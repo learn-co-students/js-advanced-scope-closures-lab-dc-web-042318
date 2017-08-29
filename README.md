@@ -1,29 +1,19 @@
-# Prototypes in JS Classes Travel
+# Closures Lab
 
 ## Objectives
-+ Use class syntax to construct objects
-+ Use the constructor method to set initial attributes
++ Use closures to customize functions
++ Use closures as a mechanism of encapsulations
 
 ## Instructions
 
-As Scuber expands its fleet and its services, we need to develop a way to model its drivers and their routes.  In this lab, you will use the class syntax to create a Driver class and a Route class.
+In the lab that follows, practice using closures to construct functions that have reference to variables that the execution scope does not.  
 
-**Driver**
+Create the following functions:
 
-* A driver can be initialized with a name, and a string representing the day that he joined Scuber.  Add the following methods and attributes to the class:
+  + produceDrivingRange() - Returns a function that then calculates whether blocks are for a specific range.  For example, `produceDrivingRange(10)` returns a function that we can then pass a starting and ending block to.  If the starting anding blocks are further than 10 blocks away, our returned function will tell us.   
+  + produceTipCalculator() - Returns a function that then calculates a tip.  For example, `produceTipCalculator(.10)` returns a function that calculates ten percent tip on a fare.  `produceTipCalculator(.20)` returns a function that calculates twenty percent tip on a fare.
+  + `createDriver` returns a function that returns a class that produces a Driver class.  The class has reference to a driverId that is incremented each time a new driver is created.  The rest of the code base does not have access to driverId.  
 
-+ `startDate` — returns a JavaScript Date object.
+The functions should make use of closures to achieve the specified goals.
 
-+ `yearsExperienceFromBeginningOf` — takes an argument of a year and returns the number of years since the driver's startDate
-
-**Route**
-
-* A route is initialized with two arguments, a beginningLocation and an endingLocation.  Both of these arguments are JavaScript objects with an attributes of horizontal and vertical.  
-
-+ `blocksTravelled` — returns an integer with the number of blocks travelled.  To calculate the distance of avenues travelled, you will need to the names and order of avenues in New York City.  You can use the following array to help with your calculation:
-
-`let eastWest =  ['1st Avenue', '2nd Avenue', '3rd Avenue', 'Lexington Avenue', 'Park', 'Madison Avenue', '5th Avenue']`
-
-+ `estimatedTime` — Takes a boolean argument of peak uses the argument to calculate the estimated time.  The method returns the number of minutes.  During off peak hours, a driver travels three blocks in a minute, while during peak hours a driver travels an estimated two blocks in a minute.
-
-<p class='util--hide'>View <a href='https://learn.co/lessons/js-classes-travel-lab' title='Classes Travel in JS Lab '>Classes Travel in JS Lab</a> on Learn.co and start learning to code for free.</p>
+<p class='util--hide'>View <a href='https://learn.co/lessons/js-advanced-scope-closures-lab' title='Advanced Scope Closures Lab'>Advanced Scope Closures Lab</a> on Learn.co and start learning to code for free.</p>
