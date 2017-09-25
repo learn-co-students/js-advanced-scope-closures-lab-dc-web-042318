@@ -2,9 +2,10 @@ tags:
   - learn.co
   - flatiron school
   - javascript
-  - strings
-  - code-along
+  - scope
+  - closures
+  - lab
 languages:
   - javascript
 resources:
-  - 9
+  - 0
