@@ -7,13 +7,15 @@ describe('closures', function() {
     })
 
     it('takes an argument of blockRange which is then used to calculate if something is within range', function(){
-      let tenBlockRange = produceDrivingRange(8)
-      expect(tenBlockRange('10th', '20th')).to.equal('2 blocks out of range')
+      let eightBlockRange = produceDrivingRange(8)
+      expect(eightBlockRange('10th', '20th')).to.equal('2 blocks out of range')
+      expect(eightBlockRange('10th', '14th')).to.equal('within range by 4')
     })
 
     it('returns when something is out of range', function(){
       let twentyBlockRange = produceDrivingRange(20)
       expect(twentyBlockRange('10th', '20th')).to.equal('within range by 10')
+      expect(twentyBlockRange('10th', '40th')).to.equal('10 blocks out of range')
     })
   })
 
@@ -30,13 +32,13 @@ describe('closures', function() {
   })
 
   describe('createDriver', function(){
-    const Driver = createDriver()
-
     it('returns a class that allows us to create a driver with a name attribute', function(){
+      let Driver = createDriver()
       expect(new Driver('Sam').name).to.equal('Sam')
     })
 
     it('increments the driverId each time a driver is created', function(){
+      let Driver = createDriver()
       expect(new Driver('Sam').id).to.not.equal(new Driver('Bob').id)
     })
   })
