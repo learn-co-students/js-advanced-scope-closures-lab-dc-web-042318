@@ -8,9 +8,9 @@
     "url": "git+ssh://git@github.com/learn-co-curriculum/js-advanced-scope-closures-lab.git"
   },
   "scripts": {
-   "postinstall": "gem install learn-co",
-   "test": "node_modules/browser-sync/bin/browser-sync.js start --config node_modules/learn-browser/bs-config.js"
- },
+    "postinstall": "gem install learn-co",
+    "test": "node_modules/browser-sync/bin/browser-sync.js start --config node_modules/learn-browser/bs-config.js"
+  },
   "keywords": [
     "learn",
     "flatiron school",
