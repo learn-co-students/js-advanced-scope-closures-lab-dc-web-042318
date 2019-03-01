@@ -24,9 +24,9 @@ Create the following functions:
   percent tip on a fare. `produceTipCalculator(.20)` returns a function that
   calculates twenty percent tip on a fare.
 
-- `createDriver` is a function that returns a Driver class. The class has
-  reference to a driverId that is incremented each time a new driver is created.
-  The rest of the code base does not have access to driverId.
+- `createDriver` is a function that returns a `Driver` class. The class has
+  reference to a `driverId` that is incremented each time a new driver is created.
+  The rest of the code base does not have access to `driverId`.
 
 The functions should make use of closures to achieve the specified goals.
 
