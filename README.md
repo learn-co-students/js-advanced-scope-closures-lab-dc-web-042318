@@ -11,7 +11,7 @@ In the lab that follows, practice using closures to construct functions that hav
 
 Create the following functions:
 
-- `produceDrivingRange()` - Returns a function that then calculates whether a
+- `produceDrivingRange()` - Calculates whether a
   given trip is within range.  For example, `produceDrivingRange(10)` returns a
   function that will take two strings as arguments and returns a message stating
   whether the trip is in range. If `foo = produceDrivingRange(10)`, then
